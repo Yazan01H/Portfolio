@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adel Maher Hamdan – Factory Manager & Materials Engineer</title>
+  <meta name="description" content="Portfolio of Adel Maher Hamdan – Factory Manager, Materials Engineer, R&D Leader, and Process Optimization Expert based in Amman, Jordan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="#hero">
+      <span class="logo-mark">A</span>
+      <span class="logo-text">
+        <span class="logo-name" data-en="Adel Hamdan" data-ar="عادل حمدان">Adel Hamdan</span>
+        <span class="logo-role" data-en="Factory Manager" data-ar="مدير المصنع">Factory Manager</span>
+      </span>
+      <span class="status-dot"></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about"        data-en="About"         data-ar="عني">About</a>
+      <a href="#experience"   data-en="Experience"    data-ar="الخبرة">Experience</a>
+      <a href="#skills"       data-en="Skills"        data-ar="المهارات">Skills</a>
+      <a href="#projects"     data-en="Projects"      data-ar="المشاريع">Projects</a>
+      <a href="#publications" data-en="Publications"  data-ar="المنشورات">Publications</a>
+      <a href="#certifications" data-en="Certifications" data-ar="الشهادات">Certifications</a>
+      <a href="#contact"      data-en="Contact"       data-ar="تواصل">Contact</a>
+    </nav>
+    <div class="nav-controls">
+      <button class="ctrl-btn" id="themeBtn" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <button class="ctrl-btn lang-btn" id="langBtn" aria-label="Toggle language"><span>AR</span></button>
+      <button class="ctrl-btn hamburger" id="menuBtn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        <i class="fa-solid fa-location-dot"></i>
+        <span data-en="Amman, Jordan" data-ar="عمّان، الأردن">Amman, Jordan</span>
+      </div>
+      <h1 class="hero-title">
+        <span data-en="Adel Maher" data-ar="عادل ماهر">Adel Maher</span><br>
+        <span class="gradient-text" data-en="Hamdan" data-ar="حمدان">Hamdan</span>
+      </h1>
+      <p class="hero-subtitle">
+        <span data-en="Expert in " data-ar="خبير في ">Expert in </span><span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-bio" data-en="Results-driven Factory Manager and Materials Engineer with 5+ years driving manufacturing excellence across chemical, fertilizer, cosmetics, and pet care industries." data-ar="مدير مصنع ومهندس مواد يتمتع بخبرة تزيد على 5 سنوات في قيادة التميز التصنيعي عبر صناعات الكيماويات والأسمدة ومستحضرات التجميل ورعاية الحيوانات.">Results-driven Factory Manager and Materials Engineer with 5+ years driving manufacturing excellence across chemical, fertilizer, cosmetics, and pet care industries.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i><span data-en="Get in Touch" data-ar="تواصل معي">Get in Touch</span></a>
+        <a href="CV_Adel_M_Hamdan.pdf" target="_blank" class="btn btn-outline"><i class="fa-solid fa-file-arrow-down"></i><span data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</span></a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+          <span class="stat-label" data-en="Years Exp." data-ar="سنوات خبرة">Years Exp.</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="30">0</span><span class="stat-plus">+</span>
+          <span class="stat-label" data-en="R&D Projects" data-ar="مشاريع بحثية">R&D Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="4">0</span>
+          <span class="stat-label" data-en="Industries" data-ar="صناعات">Industries</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span>
+          <span class="stat-label" data-en="Certifications" data-ar="شهادات">Certifications</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-wrap">
+        <div class="avatar-ring outer-ring"></div>
+        <div class="avatar-ring inner-ring"></div>
+        <div class="avatar-img">
+          <img src="IMG_6260.jpg.jpeg" alt="Adel Maher Hamdan" />
+        </div>
+        <div class="avatar-badge badge-1"><i class="fa-solid fa-industry"></i><span data-en="Factory Mgr" data-ar="مدير مصنع">Factory Mgr</span></div>
+        <div class="avatar-badge badge-2"><i class="fa-solid fa-flask"></i><span data-en="R&D Expert" data-ar="خبير بحث">R&D Expert</span></div>
+        <div class="avatar-badge badge-3"><i class="fa-solid fa-certificate"></i><span>GMP / ISO</span></div>
+        <div class="avatar-badge badge-4"><i class="fa-solid fa-seedling"></i><span data-en="Fertilizers" data-ar="أسمدة">Fertilizers</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section alt" id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-en="Who I Am" data-ar="من أنا">Who I Am</span>
+      <h2 data-en="About Me" data-ar="عني">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-main reveal">
+        <p class="about-intro" data-en="I am a Materials Engineer and Factory Manager with a strong background in industrial operations, R&D, and quality management. My career spans the chemical, fertilizer, cosmetics, and pet care industries — always with a focus on innovation, compliance, and measurable results." data-ar="أنا مهندس مواد ومدير مصنع بخلفية قوية في العمليات الصناعية والبحث والتطوير وإدارة الجودة. تمتد مسيرتي المهنية عبر صناعات الكيماويات والأسمدة ومستحضرات التجميل ورعاية الحيوانات — دائماً مع التركيز على الابتكار والامتثال والنتائج القابلة للقياس.">I am a Materials Engineer and Factory Manager with a strong background in industrial operations, R&D, and quality management. My career spans the chemical, fertilizer, cosmetics, and pet care industries — always with a focus on innovation, compliance, and measurable results.</p>
+        <p data-en="With hands-on experience from the shop floor to the executive boardroom, I bridge technical engineering and strategic business management. I've established PMO frameworks from scratch, led cross-functional teams, and contributed to internationally published research." data-ar="بخبرة عملية من أرضية المصنع إلى غرفة الاجتماعات التنفيذية، أجسّر الهندسة التقنية وإدارة الأعمال الاستراتيجية. لقد أسست أُطر PMO من الصفر، وقدت فرقاً متعددة الوظائف، وأسهمت في أبحاث منشورة دولياً.">With hands-on experience from the shop floor to the executive boardroom, I bridge technical engineering and strategic business management. I've established PMO frameworks from scratch, led cross-functional teams, and contributed to internationally published research.</p>
+        <div class="about-highlights">
+          <div class="highlight-item"><i class="fa-solid fa-industry"></i><div><strong data-en="Manufacturing Excellence" data-ar="التميز التصنيعي">Manufacturing Excellence</strong><span data-en="End-to-end factory operations across multiple industries" data-ar="عمليات مصنع شاملة عبر صناعات متعددة">End-to-end factory operations across multiple industries</span></div></div>
+          <div class="highlight-item"><i class="fa-solid fa-flask-vial"></i><div><strong data-en="Innovation & R&D" data-ar="الابتكار والبحث">Innovation & R&D</strong><span data-en="30+ research projects, patents, and novel formulations" data-ar="أكثر من 30 مشروعاً بحثياً وبراءات اختراع وتركيبات جديدة">30+ research projects, patents, and novel formulations</span></div></div>
+          <div class="highlight-item"><i class="fa-solid fa-shield-halved"></i><div><strong data-en="Quality & Compliance" data-ar="الجودة والامتثال">Quality & Compliance</strong><span data-en="GMP, ISO 9001, FDA, NEBOSH, OSHA certified" data-ar="معتمد في GMP وISO وFDA وNEBOSH وOSHA">GMP, ISO 9001, FDA, NEBOSH, OSHA certified</span></div></div>
+          <div class="highlight-item"><i class="fa-solid fa-users-gear"></i><div><strong data-en="Strategic Leadership" data-ar="القيادة الاستراتيجية">Strategic Leadership</strong><span data-en="PMO design, governance, cross-functional coordination" data-ar="تصميم PMO والحوكمة والتنسيق متعدد الوظائف">PMO design, governance, cross-functional coordination</span></div></div>
+        </div>
+      </div>
+      <div class="about-side reveal">
+        <div class="info-card">
+          <h3 data-en="Quick Info" data-ar="معلومات سريعة">Quick Info</h3>
+          <ul class="info-list">
+            <li><i class="fa-solid fa-user-tie"></i><span><em data-en="Title" data-ar="المسمى">Title</em><strong data-en="Factory Manager" data-ar="مدير مصنع">Factory Manager</strong></span></li>
+            <li><i class="fa-solid fa-graduation-cap"></i><span><em data-en="Degree" data-ar="الدرجة">Degree</em><strong data-en="B.Sc. Materials Engineering" data-ar="بكالوريوس هندسة المواد">B.Sc. Materials Engineering</strong></span></li>
+            <li><i class="fa-solid fa-location-dot"></i><span><em data-en="Location" data-ar="الموقع">Location</em><strong data-en="Amman, Jordan" data-ar="عمّان، الأردن">Amman, Jordan</strong></span></li>
+            <li><i class="fa-solid fa-envelope"></i><span><em data-en="Email" data-ar="البريد">Email</em><strong><a href="mailto:Adel.hamdan1997@yahoo.com">Adel.hamdan1997@yahoo.com</a></strong></span></li>
+            <li><i class="fa-solid fa-phone"></i><span><em data-en="Phone" data-ar="الهاتف">Phone</em><strong><a href="tel:00962799012353">+962 799 012 353</a></strong></span></li>
+            <li><i class="fa-solid fa-language"></i><span><em data-en="Languages" data-ar="اللغات">Languages</em><strong data-en="Arabic (Native), English (Good)" data-ar="العربية (لغة أم)، الإنجليزية (جيد)">Arabic (Native), English (Good)</strong></span></li>
+          </ul>
+          <a href="CV_Adel_M_Hamdan.pdf" target="_blank" class="btn btn-primary btn-full"><i class="fa-solid fa-file-pdf"></i><span data-en="View Full CV" data-ar="عرض السيرة الذاتية">View Full CV</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-en="Career Path" data-ar="المسيرة المهنية">Career Path</span>
+      <h2 data-en="Professional Experience" data-ar="الخبرة المهنية">Professional Experience</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date"><span data-en="Mar 2024 – Sep 2025" data-ar="مارس 2024 – سبتمبر 2025">Mar 2024 – Sep 2025</span></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 data-en="Factory Manager" data-ar="مدير المصنع">Factory Manager</h3>
+              <span class="timeline-company" data-en="Quatro-P4 Company · Amman, Jordan" data-ar="شركة كواترو-P4 · عمّان، الأردن">Quatro-P4 Company · Amman, Jordan</span>
+            </div>
+            <span class="industry-badge"><i class="fa-solid fa-soap"></i><span data-en="Cosmetics & Pet Care" data-ar="تجميل ورعاية حيوانات">Cosmetics & Pet Care</span></span>
+          </div>
+          <div class="timeline-tags">
+            <span data-en="Operations Management" data-ar="إدارة العمليات">Operations Management</span>
+            <span data-en="PMO Governance" data-ar="حوكمة PMO">PMO Governance</span>
+            <span>GMP / ISO</span>
+            <span data-en="Team Leadership" data-ar="قيادة الفريق">Team Leadership</span>
+            <span data-en="Supply Chain" data-ar="سلسلة التوريد">Supply Chain</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li data-en="Directed end-to-end factory operations ensuring optimal productivity, efficiency, and product quality in cosmetics and pet care manufacturing." data-ar="أشرف على عمليات المصنع الشاملة لضمان الإنتاجية المثلى والكفاءة وجودة المنتج في تصنيع مستحضرات التجميل ورعاية الحيوانات.">Directed end-to-end factory operations ensuring optimal productivity, efficiency, and product quality in cosmetics and pet care manufacturing.</li>
+            <li data-en="Led the design, setup, and enhancement of PMO frameworks, governance models, and delivery methodologies across all programs." data-ar="قاد تصميم وإعداد وتحسين أُطر PMO ونماذج الحوكمة ومنهجيات التسليم عبر جميع البرامج.">Led the design, setup, and enhancement of PMO frameworks, governance models, and delivery methodologies across all programs.</li>
+            <li data-en="Established the manufacturing company from scratch to export-ready operations, managing all phases from facility setup to market launch." data-ar="أسس شركة التصنيع من الصفر حتى العمليات الجاهزة للتصدير، مع إدارة جميع المراحل من إعداد المنشأة حتى الإطلاق في السوق.">Established the manufacturing company from scratch to export-ready operations, managing all phases from facility setup to market launch.</li>
+            <li data-en="Led and mentored multidisciplinary teams of production supervisors, engineers, and operators; implemented KPIs and performance evaluations." data-ar="قاد وأرشد فرقاً متعددة التخصصات من مشرفي الإنتاج والمهندسين والمشغلين؛ ونفذ مؤشرات الأداء وتقييمات الأداء.">Led and mentored multidisciplinary teams of production supervisors, engineers, and operators; implemented KPIs and performance evaluations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date"><span data-en="Mar 2023 – Mar 2024" data-ar="مارس 2023 – مارس 2024">Mar 2023 – Mar 2024</span></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 data-en="R&D and Quality Senior Officer" data-ar="ضابط أول للبحث والتطوير والجودة">R&D and Quality Senior Officer</h3>
+              <span class="timeline-company" data-en="Manaseer Fertilizers & Chemicals · Amman" data-ar="مناصير للأسمدة والكيماويات · عمّان">Manaseer Fertilizers & Chemicals · Amman</span>
+            </div>
+            <span class="industry-badge"><i class="fa-solid fa-seedling"></i><span data-en="Fertilizers & Chemicals" data-ar="أسمدة وكيماويات">Fertilizers & Chemicals</span></span>
+          </div>
+          <div class="timeline-tags">
+            <span data-en="R&D Leadership" data-ar="قيادة البحث">R&D Leadership</span>
+            <span>ISO 9001</span>
+            <span data-en="Chemical Formulation" data-ar="التركيب الكيميائي">Chemical Formulation</span>
+            <span>PMO</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li data-en="Led R&D teams to develop innovative chemical fertilizers — powder, liquid, suspension, gel, and granulated formulations." data-ar="قاد فرق البحث والتطوير لتطوير أسمدة كيميائية مبتكرة — تركيبات المسحوق والسائل والمعلق والجل والحبيبات.">Led R&D teams to develop innovative chemical fertilizers — powder, liquid, suspension, gel, and granulated formulations.</li>
+            <li data-en="Implemented ISO 9001 quality assurance strategies ensuring impurity-free products meeting agricultural and environmental criteria." data-ar="نفذ استراتيجيات ضمان الجودة ISO 9001 لضمان منتجات خالية من الشوائب تلبي معايير الزراعة والبيئة.">Implemented ISO 9001 quality assurance strategies ensuring impurity-free products meeting agricultural and environmental criteria.</li>
+            <li data-en="Applied latest fertilizer industry trends to reduce costs and promote environmental sustainability." data-ar="طبق أحدث اتجاهات صناعة الأسمدة لتقليل التكاليف وتعزيز الاستدامة البيئية.">Applied latest fertilizer industry trends to reduce costs and promote environmental sustainability.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date"><span data-en="Dec 2020 – Mar 2023" data-ar="ديسمبر 2020 – مارس 2023">Dec 2020 – Mar 2023</span></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 data-en="Process Engineer" data-ar="مهندس العمليات">Process Engineer</h3>
+              <span class="timeline-company" data-en="Manaseer Group Company · Amman, Jordan" data-ar="مجموعة شركات مناصير · عمّان، الأردن">Manaseer Group Company · Amman, Jordan</span>
+            </div>
+            <span class="industry-badge"><i class="fa-solid fa-gears"></i><span data-en="Industrial Group" data-ar="مجموعة صناعية">Industrial Group</span></span>
+          </div>
+          <div class="timeline-tags">
+            <span data-en="Process Optimization" data-ar="تحسين العمليات">Process Optimization</span>
+            <span data-en="Feasibility Studies" data-ar="دراسات الجدوى">Feasibility Studies</span>
+            <span data-en="Data Analysis" data-ar="تحليل البيانات">Data Analysis</span>
+            <span data-en="KPI Monitoring" data-ar="مراقبة KPI">KPI Monitoring</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li data-en="Designed, analyzed, and optimized manufacturing processes to maximize efficiency and minimize costs." data-ar="صمم وحلل وحسّن عمليات التصنيع لتعظيم الكفاءة وتقليل التكاليف.">Designed, analyzed, and optimized manufacturing processes to maximize efficiency and minimize costs.</li>
+            <li data-en="Conducted feasibility studies and technical assessments for new projects; developed engineering solutions to improve production capacity." data-ar="أجرى دراسات الجدوى والتقييمات التقنية للمشاريع الجديدة؛ وطور حلولاً هندسية لتحسين طاقة الإنتاج.">Conducted feasibility studies and technical assessments for new projects; developed engineering solutions to improve production capacity.</li>
+            <li data-en="Prepared detailed operational performance reports with actionable recommendations for senior management." data-ar="أعد تقارير تفصيلية عن الأداء التشغيلي مع توصيات قابلة للتنفيذ للإدارة العليا.">Prepared detailed operational performance reports with actionable recommendations for senior management.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date"><span data-en="Aug 2020 – Dec 2020" data-ar="أغسطس 2020 – ديسمبر 2020">Aug 2020 – Dec 2020</span></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 data-en="Quality Engineer (QA/QC)" data-ar="مهندس الجودة">Quality Engineer (QA/QC)</h3>
+              <span class="timeline-company" data-en="Al-Moasron Group · Amman, Jordan" data-ar="مجموعة المعاصرون · عمّان، الأردن">Al-Moasron Group · Amman, Jordan</span>
+            </div>
+            <span class="industry-badge"><i class="fa-solid fa-circle-check"></i><span data-en="Plastics" data-ar="البلاستيك">Plastics</span></span>
+          </div>
+          <div class="timeline-tags">
+            <span>ISO 9001</span>
+            <span>Six Sigma</span>
+            <span data-en="Lean Manufacturing" data-ar="التصنيع الرشيق">Lean Manufacturing</span>
+            <span data-en="Root Cause Analysis" data-ar="تحليل الأسباب الجذرية">Root Cause Analysis</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li data-en="Developed and implemented ISO 9001 quality management systems for plastic products." data-ar="طور ونفذ أنظمة إدارة الجودة ISO 9001 للمنتجات البلاستيكية.">Developed and implemented ISO 9001 quality management systems for plastic products.</li>
+            <li data-en="Applied Six Sigma and Lean Manufacturing to improve processes and reduce defects." data-ar="طبق ستة سيغما والتصنيع الرشيق لتحسين العمليات وتقليل العيوب.">Applied Six Sigma and Lean Manufacturing to improve processes and reduce defects.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="section alt" id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-en="Competencies" data-ar="الكفاءات">Competencies</span>
+      <h2 data-en="Skills & Expertise" data-ar="المهارات والخبرات">Skills & Expertise</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon"><i class="fa-solid fa-industry"></i></div>
+        <h3 data-en="Technical & Engineering" data-ar="التقنية والهندسة">Technical & Engineering</h3>
+        <ul class="skill-list">
+          <li><span data-en="Manufacturing Process Optimization" data-ar="تحسين عمليات التصنيع">Manufacturing Process Optimization</span><div class="skill-bar"><div class="skill-fill" style="--pct:92%"></div></div></li>
+          <li><span data-en="Production Planning & Execution" data-ar="تخطيط الإنتاج وتنفيذه">Production Planning & Execution</span><div class="skill-bar"><div class="skill-fill" style="--pct:88%"></div></div></li>
+          <li><span data-en="Chemical Formulation & R&D" data-ar="التركيب الكيميائي والبحث">Chemical Formulation & R&D</span><div class="skill-bar"><div class="skill-fill" style="--pct:87%"></div></div></li>
+          <li><span data-en="Process Engineering" data-ar="هندسة العمليات">Process Engineering</span><div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div></li>
+          <li><span data-en="Testing & Validation" data-ar="الاختبار والتحقق">Testing & Validation</span><div class="skill-bar"><div class="skill-fill" style="--pct:83%"></div></div></li>
+        </ul>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3 data-en="Quality & Compliance" data-ar="الجودة والامتثال">Quality & Compliance</h3>
+        <ul class="skill-list">
+          <li><span>GMP / ISO 9001 / FDA</span><div class="skill-bar"><div class="skill-fill" style="--pct:93%"></div></div></li>
+          <li><span data-en="Regulatory Compliance (HSE)" data-ar="الامتثال التنظيمي HSE">Regulatory Compliance (HSE)</span><div class="skill-bar"><div class="skill-fill" style="--pct:88%"></div></div></li>
+          <li><span>Six Sigma & Lean</span><div class="skill-bar"><div class="skill-fill" style="--pct:82%"></div></div></li>
+          <li><span data-en="Root Cause Analysis" data-ar="تحليل الأسباب الجذرية">Root Cause Analysis</span><div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div></li>
+        </ul>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <h3 data-en="PMO & Project Management" data-ar="PMO وإدارة المشاريع">PMO & Project Management</h3>
+        <ul class="skill-list">
+          <li><span data-en="PMO Framework Design" data-ar="تصميم إطار PMO">PMO Framework Design</span><div class="skill-bar"><div class="skill-fill" style="--pct:88%"></div></div></li>
+          <li><span data-en="Program & Project Management" data-ar="إدارة البرامج والمشاريع">Program & Project Management</span><div class="skill-bar"><div class="skill-fill" style="--pct:86%"></div></div></li>
+          <li><span data-en="Risk & Change Management" data-ar="إدارة المخاطر والتغيير">Risk & Change Management</span><div class="skill-bar"><div class="skill-fill" style="--pct:83%"></div></div></li>
+          <li><span data-en="Governance & Reporting" data-ar="الحوكمة والتقارير">Governance & Reporting</span><div class="skill-bar"><div class="skill-fill" style="--pct:84%"></div></div></li>
+        </ul>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon"><i class="fa-solid fa-users-gear"></i></div>
+        <h3 data-en="Leadership & Management" data-ar="القيادة والإدارة">Leadership & Management</h3>
+        <ul class="skill-list">
+          <li><span data-en="Team Leadership & Mentoring" data-ar="قيادة الفريق والإرشاد">Team Leadership & Mentoring</span><div class="skill-bar"><div class="skill-fill" style="--pct:91%"></div></div></li>
+          <li><span data-en="Stakeholder Management" data-ar="إدارة أصحاب المصلحة">Stakeholder Management</span><div class="skill-bar"><div class="skill-fill" style="--pct:86%"></div></div></li>
+          <li><span data-en="Strategic Planning" data-ar="التخطيط الاستراتيجي">Strategic Planning</span><div class="skill-bar"><div class="skill-fill" style="--pct:83%"></div></div></li>
+          <li><span data-en="Supply Chain & Inventory" data-ar="سلسلة التوريد والمخزون">Supply Chain & Inventory</span><div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-en="Research & Development" data-ar="البحث والتطوير">Research & Development</span>
+      <h2 data-en="Projects & Research Initiatives" data-ar="المشاريع ومبادرات البحث">Projects & Research Initiatives</h2>
+    </div>
+    <div class="projects-tabs reveal">
+      <button class="tab-btn active" data-tab="materials" data-en="Materials Engineering" data-ar="هندسة المواد">Materials Engineering</button>
+      <button class="tab-btn" data-tab="fertilizer" data-en="Fertilizer R&D" data-ar="بحث وتطوير الأسمدة">Fertilizer R&D</button>
+      <button class="tab-btn" data-tab="industrial" data-en="Industrial & Business" data-ar="الصناعية والتجارية">Industrial & Business</button>
+    </div>
+
+    <div class="tab-panel active" id="tab-materials">
+      <div class="projects-grid">
+        <div class="project-card reveal"><i class="fa-solid fa-atom"></i><h4 data-en="Copper Extraction from Jordanian Ore" data-ar="استخلاص النحاس من الخام الأردني">Copper Extraction from Jordanian Ore</h4><p data-en="Foundational research on local mineral processing — graduated with distinction." data-ar="بحث أساسي في معالجة المعادن المحلية — تخرج بامتياز.">Foundational research on local mineral processing — graduated with distinction.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-fire-flame-curved"></i><h4 data-en="Dead Burned Magnesia (Dolime & Lime)" data-ar="المغنيسيا المحروقة الميتة">Dead Burned Magnesia (Dolime & Lime)</h4><p data-en="Two-process investigation for high-purity magnesia production." data-ar="تحقيق بعمليتين لإنتاج مغنيسيا عالية النقاء.">Two-process investigation for high-purity magnesia production.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-layer-group"></i><h4 data-en="Basalt Composites (PE & PP)" data-ar="مركبات البازلت">Basalt Composites (PE & PP)</h4><p data-en="Development of basalt powder composites with thermoplastic polymers." data-ar="تطوير مركبات مسحوق البازلت مع البوليمرات الحرارية.">Development of basalt powder composites with thermoplastic polymers.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-gem"></i><h4 data-en="Surface-Reacted Calcium Carbonate" data-ar="كربونات الكالسيوم المتفاعلة السطحية">Surface-Reacted Calcium Carbonate</h4><p data-en="Including bleaching variant for premium mineral whiteness applications." data-ar="بما في ذلك المتغير التبييض لتطبيقات البياض المعدني المتميز.">Including bleaching variant for premium mineral whiteness applications.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-mountain"></i><h4 data-en="Kaolin Beneficiation & GCC Coating" data-ar="تحسين الكاولين وطلاء GCC">Kaolin Beneficiation & GCC Coating</h4><p data-en="Kaolin particles coated with ground calcium carbonate for industrial use." data-ar="جسيمات الكاولين مطلية بكربونات الكالسيوم المطحونة للاستخدام الصناعي.">Kaolin particles coated with ground calcium carbonate for industrial use.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-vials"></i><h4 data-en="TiO₂ Pigment Replacement" data-ar="استبدال صبغة TiO₂">TiO₂ Pigment Replacement</h4><p data-en="Cost-reduction research for alternative white pigment systems." data-ar="بحث تخفيض التكلفة لأنظمة الصبغات البيضاء البديلة.">Cost-reduction research for alternative white pigment systems.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-recycle"></i><h4 data-en="Limestone Saw Mud in Cement" data-ar="طين منشار الحجر الجيري في الإسمنت">Limestone Saw Mud in Cement</h4><p data-en="Industrial waste utilization in cement production — circular economy approach." data-ar="استخدام النفايات الصناعية في إنتاج الإسمنت — نهج الاقتصاد الدائري.">Industrial waste utilization in cement production — circular economy approach.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-wind"></i><h4 data-en="Fluidized Bed Process Development" data-ar="تطوير عملية السرير المميَّع">Fluidized Bed Process Development</h4><p data-en="Built the fluidized bed process from scratch for industrial application." data-ar="بنى عملية السرير المميَّع من الصفر للتطبيق الصناعي.">Built the fluidized bed process from scratch for industrial application.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-droplet"></i><h4 data-en="Mg Derivatives & Li Carbonate from Brine" data-ar="مشتقات Mg وكربونات Li">Mg Derivatives & Li Carbonate from Brine</h4><p data-en="Simultaneous production method from high-concentration magnesium brine." data-ar="طريقة إنتاج متزامنة من محلول المغنيسيوم عالي التركيز.">Simultaneous production method from high-concentration magnesium brine.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-building-columns"></i><h4 data-en="Phosphate-Based Cement" data-ar="إسمنت قائم على الفوسفات">Phosphate-Based Cement</h4><p data-en="Novel cement formulation using phosphate as primary binding agent." data-ar="تركيبة إسمنت جديدة تستخدم الفوسفات كعامل رابط أساسي.">Novel cement formulation using phosphate as primary binding agent.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-burst"></i><h4 data-en="Sand Blasting Development Process" data-ar="عملية تطوير السفع الرملي">Sand Blasting Development Process</h4><p data-en="Optimized sand blasting process for industrial surface preparation." data-ar="تحسين عملية السفع الرملي للإعداد السطحي الصناعي.">Optimized sand blasting process for industrial surface preparation.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-volcano"></i><h4 data-en="Pozzolana Beneficiation Process" data-ar="عملية تحسين البوزولانا">Pozzolana Beneficiation Process</h4><p data-en="Volcanic ash treatment for use in sustainable construction materials." data-ar="معالجة الرماد البركاني للاستخدام في مواد البناء المستدامة.">Volcanic ash treatment for use in sustainable construction materials.</p></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-fertilizer">
+      <div class="projects-grid">
+        <div class="project-card reveal"><i class="fa-solid fa-droplet"></i><h4 data-en="Hydrogel Fertilizers Development" data-ar="تطوير الأسمدة الهيدروجيلية">Hydrogel Fertilizers Development</h4><p data-en="Novel hydrogel-based controlled-release fertilizer systems for improved nutrient delivery." data-ar="أنظمة أسمدة جديدة مبنية على الهيدروجيل للإطلاق المتحكم به لتحسين توصيل المغذيات.">Novel hydrogel-based controlled-release fertilizer systems for improved nutrient delivery.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-microscope"></i><h4 data-en="Nano Fertilizers Development" data-ar="تطوير الأسمدة النانوية">Nano Fertilizers Development</h4><p data-en="Nanotechnology applications in agricultural nutrient delivery and plant uptake efficiency." data-ar="تطبيقات تكنولوجيا النانو في توصيل المغذيات الزراعية وكفاءة امتصاص النبات.">Nanotechnology applications in agricultural nutrient delivery and plant uptake efficiency.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-leaf"></i><h4 data-en="Jordanian Zeolite for Agriculture" data-ar="الزيوليت الأردني للزراعة">Jordanian Zeolite for Agriculture</h4><p data-en="Local mineral resource utilization for agricultural soil improvement and animal feed." data-ar="استخدام الموارد المعدنية المحلية لتحسين التربة الزراعية وعلف الحيوانات.">Local mineral resource utilization for agricultural soil improvement and animal feed.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-mountain-sun"></i><h4 data-en="Jordanian Basalt for Agriculture" data-ar="البازلت الأردني للزراعة">Jordanian Basalt for Agriculture</h4><p data-en="Research on basalt rock dust as a soil amendment with micronutrient benefits." data-ar="بحث عن غبار الصخر البازلتي كمحسّن للتربة مع فوائد العناصر الغذائية الدقيقة.">Research on basalt rock dust as a soil amendment with micronutrient benefits.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-flask"></i><h4 data-en="N-P-K Fertilizer Formulations" data-ar="تركيبات الأسمدة NPK">N-P-K Fertilizer Formulations</h4><p data-en="Development and optimization of balanced macro-nutrient fertilizer formulas." data-ar="تطوير وتحسين صيغ الأسمدة المتوازنة للعناصر الغذائية الكبرى.">Development and optimization of balanced macro-nutrient fertilizer formulas.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-shield-virus"></i><h4 data-en="Nano-Bio Systems for Food Security" data-ar="الأنظمة النانو-بيولوجية لأمن الغذاء">Nano-Bio Systems for Food Security</h4><p data-en="Enhancing plant immunity and agricultural productivity through nano-biological approaches." data-ar="تعزيز مناعة النبات والإنتاجية الزراعية من خلال النهج النانو-بيولوجي.">Enhancing plant immunity and agricultural productivity through nano-biological approaches.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-flask-vial"></i><h4 data-en="Acidic Liquid Fertilizers P-K Dispersion" data-ar="تشتت الأسمدة السائلة الحمضية P-K">Acidic Liquid Fertilizers P-K Dispersion</h4><p data-en="Improved dispersion stability for phosphorus-potassium liquid fertilizer formulations." data-ar="تحسين استقرار التشتت لتركيبات الأسمدة السائلة الفوسفور-البوتاسيوم.">Improved dispersion stability for phosphorus-potassium liquid fertilizer formulations.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-circle-nodes"></i><h4 data-en="Suspension Fertilizers Improvement" data-ar="تحسين الأسمدة المعلقة">Suspension Fertilizers Improvement</h4><p data-en="Enhanced suspension stability, sedimentation control, and nutrient bioavailability." data-ar="تحسين استقرار التعليق والسيطرة على الترسيب وتوافر المغذيات الحيوية.">Enhanced suspension stability, sedimentation control, and nutrient bioavailability.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-clock-rotate-left"></i><h4 data-en="Controlled-Release Natural-Based Fertilizers" data-ar="الأسمدة الطبيعية المتحكم في إطلاقها">Controlled-Release Natural-Based Fertilizers</h4><p data-en="Slow-release mechanisms using natural coating materials for sustained nutrient supply." data-ar="آليات الإطلاق البطيء باستخدام مواد الطلاء الطبيعية للتغذية المستدامة.">Slow-release mechanisms using natural coating materials for sustained nutrient supply.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-spa"></i><h4 data-en="Natural Fertilizers Development" data-ar="تطوير الأسمدة الطبيعية">Natural Fertilizers Development</h4><p data-en="Organic and bio-based fertilizer formulations for sustainable farming." data-ar="تركيبات الأسمدة العضوية والحيوية للزراعة المستدامة.">Organic and bio-based fertilizer formulations for sustainable farming.</p></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-industrial">
+      <div class="projects-grid projects-grid-single">
+        <div class="project-card featured reveal">
+          <i class="fa-solid fa-factory"></i>
+          <h4 data-en="Manufacturing Company — From Scratch to Export" data-ar="شركة تصنيع من الصفر حتى التصدير">Manufacturing Company — From Scratch to Export</h4>
+          <p data-en="Established, launched, and managed a full manufacturing company for pet care and personal care products. Managed all phases: facility design, equipment procurement, regulatory compliance, production ramp-up, quality systems, team building, and achieving export-ready status." data-ar="أسس وأطلق وأدار شركة تصنيع كاملة لمنتجات رعاية الحيوانات والعناية الشخصية. أدار جميع المراحل: تصميم المنشأة، وشراء المعدات، والامتثال التنظيمي، وتصعيد الإنتاج، وأنظمة الجودة، وبناء الفريق، وتحقيق حالة الجاهزية للتصدير.">Established, launched, and managed a full manufacturing company for pet care and personal care products. Managed all phases: facility design, equipment procurement, regulatory compliance, production ramp-up, quality systems, team building, and achieving export-ready status.</p>
+          <div class="featured-tags">
+            <span data-en="From Concept to Market" data-ar="من الفكرة إلى السوق">From Concept to Market</span>
+            <span data-en="Export Operations" data-ar="عمليات التصدير">Export Operations</span>
+            <span data-en="Full P&L Ownership" data-ar="ملكية P&L الكاملة">Full P&L Ownership</span>
+            <span data-en="Cross-functional Teams" data-ar="فرق متعددة الوظائف">Cross-functional Teams</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Publications -->
+<section class="section alt" id="publications">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-en="Academic Contribution" data-ar="المساهمة الأكاديمية">Academic Contribution</span>
+      <h2 data-en="Publications" data-ar="المنشورات">Publications</h2>
+    </div>
+    <div class="pub-card reveal">
+      <div class="pub-year">2025</div>
+      <div class="pub-body">
+        <span class="pub-type-badge" data-en="Peer-Reviewed Journal" data-ar="مجلة محكّمة">Peer-Reviewed Journal</span>
+        <h3 class="pub-title">Preparation and Characterization of Copper-Crosslinked Alginate–Hyaluronic Acid Aerogels as Potential Wound Dressing Materials with Enhanced Antibacterial Properties</h3>
+        <p class="pub-authors">Athamneh, T., Al-Najjar, M.A.A., Garafat, R., Abuawad, A.M., Alshweiat, A., Barakat, M., AbuIrmaileh, W.F., <strong>Hamdan, A.M.</strong>, Odat, T.A., Altarabeen, R., et al.</p>
+        <p class="pub-journal"><em>Polymers</em>, 17, 2406 (2025)</p>
+        <a class="pub-doi" href="https://doi.org/10.3390/polym17172406" target="_blank" rel="noopener">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          DOI: 10.3390/polym17172406
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications -->
+<section class="section" id="certifications">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-en="Professional Development" data-ar="التطوير المهني">Professional Development</span>
+      <h2 data-en="Certifications & Training" data-ar="الشهادات والتدريب">Certifications & Training</h2>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card reveal"><div class="cert-icon"><i class="fa-solid fa-radiation"></i></div><div class="cert-body"><h4 data-en="NDT / RT Welding Inspection" data-ar="فحص اللحام NDT/RT">NDT / RT Welding Inspection</h4><span class="cert-issuer" data-en="Jordan Engineering Association" data-ar="نقابة المهندسين الأردنيين">Jordan Engineering Association</span><span class="cert-date">April 2017</span></div></div>
+      <div class="cert-card reveal"><div class="cert-icon"><i class="fa-solid fa-certificate"></i></div><div class="cert-body"><h4 data-en="ISO 9001 Quality Management" data-ar="إدارة الجودة ISO 9001">ISO 9001 Quality Management</h4><span class="cert-issuer" data-en="ZRIQAT Engineering Academy" data-ar="أكاديمية الزريقات الهندسية">ZRIQAT Engineering Academy</span><span class="cert-date">Oct 2017</span></div></div>
+      <div class="cert-card reveal"><div class="cert-icon"><i class="fa-solid fa-wave-square"></i></div><div class="cert-body"><h4 data-en="NDT/MT&UT&PT Inspection" data-ar="فحص NDT/MT&UT&PT">NDT/MT&UT&PT Inspection</h4><span class="cert-issuer" data-en="Jordan Engineering Association" data-ar="نقابة المهندسين الأردنيين">Jordan Engineering Association</span><span class="cert-date">Sep 2018</span></div></div>
+      <div class="cert-card reveal"><div class="cert-icon"><i class="fa-solid fa-flask"></i></div><div class="cert-body"><h4 data-en="cGMP – Good Manufacturing Practice" data-ar="ممارسات التصنيع الجيدة cGMP">cGMP – Good Manufacturing Practice</h4><span class="cert-issuer" data-en="Jordan Engineering Association" data-ar="نقابة المهندسين الأردنيين">Jordan Engineering Association</span><span class="cert-date">Oct 2018</span></div></div>
+      <div class="cert-card reveal"><div class="cert-icon"><i class="fa-solid fa-hard-hat"></i></div><div class="cert-body"><h4 data-en="Safety & Occupational Health" data-ar="السلامة والصحة المهنية">Safety & Occupational Health</h4><span class="cert-issuer" data-en="Jordan Engineering Association" data-ar="نقابة المهندسين الأردنيين">Jordan Engineering Association</span><span class="cert-date">May 2019</span></div></div>
+      <div class="cert-card reveal"><div class="cert-icon"><i class="fa-solid fa-user-shield"></i></div><div class="cert-body"><h4 data-en="Occupational Health & Safety" data-ar="الصحة والسلامة المهنية">Occupational Health & Safety</h4><span class="cert-issuer">UDEMY</span><span class="cert-date">April 2022</span></div></div>
+      <div class="cert-card reveal"><div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div><div class="cert-body"><h4 data-en="NEBOSH International H&S Management" data-ar="إدارة الصحة والسلامة NEBOSH">NEBOSH International H&S Management</h4><span class="cert-issuer">UDEMY</span><span class="cert-date">April 2022</span></div></div>
+      <div class="cert-card reveal"><div class="cert-icon"><i class="fa-solid fa-triangle-exclamation"></i></div><div class="cert-body"><h4 data-en="OSHA Workplace Safety" data-ar="سلامة بيئة العمل OSHA">OSHA Workplace Safety</h4><span class="cert-issuer">UDEMY</span><span class="cert-date">April 2022</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section class="section alt" id="education">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-en="Academic Background" data-ar="الخلفية الأكاديمية">Academic Background</span>
+      <h2 data-en="Education" data-ar="التعليم">Education</h2>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div class="edu-body">
+        <h3 data-en="Bachelor's Degree in Materials Engineering" data-ar="بكالوريوس في هندسة المواد">Bachelor's Degree in Materials Engineering</h3>
+        <span class="edu-institution" data-en="Balqa'a Applied University · Amman, Jordan" data-ar="جامعة البلقاء التطبيقية · عمّان، الأردن">Balqa'a Applied University · Amman, Jordan</span>
+        <div class="edu-meta">
+          <span><i class="fa-solid fa-calendar"></i> 2015 – 2020</span>
+          <span><i class="fa-solid fa-star"></i> <span data-en="GPA: Good" data-ar="المعدل: جيد">GPA: Good</span></span>
+        </div>
+        <div class="edu-project">
+          <i class="fa-solid fa-microscope"></i>
+          <span data-en="Graduation Project: Copper Extraction from Jordanian Ores" data-ar="مشروع التخرج: استخلاص النحاس من الخامات الأردنية">Graduation Project: Copper Extraction from Jordanian Ores</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-en="Let's Connect" data-ar="لنتواصل">Let's Connect</span>
+      <h2 data-en="Get in Touch" data-ar="تواصل معي">Get in Touch</h2>
+      <p class="section-desc" data-en="Available for new opportunities, partnerships, and professional discussions." data-ar="متاح للفرص الجديدة والشراكات والمناقشات المهنية.">Available for new opportunities, partnerships, and professional discussions.</p>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-card reveal" href="mailto:Adel.hamdan1997@yahoo.com">
+        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+        <h3 data-en="Email" data-ar="البريد الإلكتروني">Email</h3>
+        <span>Adel.hamdan1997@yahoo.com</span>
+      </a>
+      <a class="contact-card reveal" href="tel:00962799012353">
+        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+        <h3 data-en="Phone" data-ar="الهاتف">Phone</h3>
+        <span>+962 799 012 353</span>
+      </a>
+      <div class="contact-card reveal">
+        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <h3 data-en="Location" data-ar="الموقع">Location</h3>
+        <span data-en="Amman, Jordan" data-ar="عمّان، الأردن">Amman, Jordan</span>
+      </div>
+      <a class="contact-card reveal" href="CV_Adel_M_Hamdan.pdf" target="_blank">
+        <div class="contact-icon"><i class="fa-solid fa-file-pdf"></i></div>
+        <h3 data-en="Resume / CV" data-ar="السيرة الذاتية">Resume / CV</h3>
+        <span data-en="Download PDF" data-ar="تحميل PDF">Download PDF</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <span data-en="© 2025 Adel Maher Hamdan · All rights reserved." data-ar="© 2025 عادل ماهر حمدان · جميع الحقوق محفوظة.">© 2025 Adel Maher Hamdan · All rights reserved.</span>
+    <div class="footer-links">
+      <a href="mailto:Adel.hamdan1997@yahoo.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="tel:00962799012353" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      <a href="CV_Adel_M_Hamdan.pdf" target="_blank" aria-label="CV"><i class="fa-solid fa-file-pdf"></i></a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
