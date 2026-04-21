@@ -410,6 +410,22 @@ html[lang='ar'] .timeline-bullets { padding-left: 0; padding-right: 16px; }
 .timeline-bullets li { font-size: .88rem; color: var(--text-muted); line-height: 1.6; }
 .timeline-bullets li::marker { color: var(--brand-2); }
 
+/* Collapsible cards */
+.timeline-card { cursor: pointer; }
+.timeline-collapse { overflow: hidden; max-height: 0; transition: max-height .4s cubic-bezier(.4,0,.2,1), opacity .3s ease; opacity: 0; }
+.timeline-card.open .timeline-collapse { max-height: 600px; opacity: 1; }
+.timeline-toggle {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border);
+  font-size: .78rem; color: var(--text-soft); font-weight: 600;
+  user-select: none;
+}
+.timeline-toggle i { transition: transform .35s ease; font-size: .8rem; color: var(--brand-2); }
+.timeline-card.open .timeline-toggle i { transform: rotate(180deg); }
+.timeline-card.open .timeline-toggle span[data-show] { display: none; }
+.timeline-card.open .timeline-toggle span[data-hide] { display: inline; }
+.timeline-card:not(.open) .timeline-toggle span[data-hide] { display: none; }
+
 /* ===== Skills ===== */
 .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .skill-category {

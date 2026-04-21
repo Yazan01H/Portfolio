@@ -189,6 +189,13 @@ const skillObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.skill-category').forEach(el => skillObserver.observe(el));
 
+/* ===== Timeline Collapse ===== */
+document.querySelectorAll('.timeline-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('open');
+  });
+});
+
 /* ===== Project Tabs ===== */
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
