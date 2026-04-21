@@ -659,9 +659,32 @@ html[lang='ar'] .pub-year { border-right: none; border-left: 2px solid var(--bor
   .timeline { padding-left: 24px; }
   .timeline::before { left: 6px; }
   .timeline-dot { left: -22px; }
-  .nav-links { display: none; position: absolute; top: var(--nav-h); left: 0; right: 0; background: var(--bg-elev); border-bottom: 1px solid var(--border); flex-direction: column; padding: 12px; gap: 4px; box-shadow: var(--shadow-md); }
+  .nav-links {
+    display: none; position: absolute; top: var(--nav-h); left: 0; right: 0;
+    background: var(--bg-elev);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column; gap: 2px;
+    padding: 10px 14px 14px;
+    box-shadow: 0 12px 32px rgba(0,0,0,.12);
+  }
   .nav-links.open { display: flex; }
+  .nav-links a {
+    font-size: .95rem; padding: 12px 16px; border-radius: 10px;
+    border-bottom: none; color: var(--text-muted);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .nav-links a::before {
+    content: ''; display: inline-block;
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--brand-2); opacity: 0; flex-shrink: 0;
+    transition: opacity var(--transition);
+  }
+  .nav-links a:hover::before, .nav-links a.active::before { opacity: 1; }
   .hamburger { display: flex; }
+  .ctrl-btn { width: 34px; height: 34px; }
+  .lang-btn { width: auto; padding: 0 9px; font-size: .72rem; }
+  .nav-inner { padding: 0 10px 0 14px; }
+  .nav-controls { margin-left: auto; gap: 6px; }
   .about-highlights { grid-template-columns: 1fr; }
 }
 
