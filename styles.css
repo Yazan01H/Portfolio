@@ -413,7 +413,14 @@ html[lang='ar'] .timeline-bullets { padding-left: 0; padding-right: 16px; }
 /* Collapsible cards */
 .timeline-card { cursor: pointer; }
 .timeline-collapse { overflow: hidden; max-height: 0; transition: max-height .4s cubic-bezier(.4,0,.2,1), opacity .3s ease; opacity: 0; }
-.timeline-card.open .timeline-collapse { max-height: 600px; opacity: 1; }
+.timeline-card.open .timeline-collapse { max-height: 2400px; opacity: 1; }
+.consulting-projects { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 14px; }
+.consulting-projects-title { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--brand-2); margin-bottom: 12px; }
+.consulting-project-item { margin-bottom: 14px; }
+.consulting-project-item strong { display: block; font-size: .82rem; font-weight: 700; color: var(--text); margin-bottom: 6px; line-height: 1.4; }
+.consulting-project-item ul { padding-left: 16px; margin: 0; }
+[dir='rtl'] .consulting-project-item ul { padding-left: 0; padding-right: 16px; }
+.consulting-project-item li { font-size: .79rem; color: var(--text-soft); line-height: 1.6; margin-bottom: 4px; }
 .timeline-toggle {
   display: flex; align-items: center; justify-content: space-between;
   margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border);
