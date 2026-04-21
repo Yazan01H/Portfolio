@@ -505,10 +505,21 @@ html[lang='ar'] .timeline-bullets { padding-left: 0; padding-right: 16px; }
 .project-card h4 { font-size: .88rem; font-weight: 700; margin-bottom: 8px; line-height: 1.4; }
 .project-card p { font-size: .8rem; color: var(--text-soft); line-height: 1.55; }
 
-.project-card.featured { padding: 28px; }
-.project-card.featured i { font-size: 1.8rem; }
-.project-card.featured h4 { font-size: 1.1rem; margin-bottom: 12px; }
-.project-card.featured p { font-size: .88rem; color: var(--text-muted); margin-bottom: 18px; }
+.project-card.featured {
+  border-color: var(--brand-2);
+  box-shadow: 0 0 0 1px var(--brand-2), 0 0 18px rgba(249,115,22,.25);
+  background: linear-gradient(135deg, var(--bg-elev) 70%, rgba(249,115,22,.07));
+}
+.project-card.featured::before { transform: scaleX(1); background: linear-gradient(90deg, var(--brand-2), var(--brand-3)); }
+.project-card.featured:hover { box-shadow: 0 0 0 1px var(--brand-2), 0 0 28px rgba(249,115,22,.4); transform: translateY(-4px); }
+.featured-badge {
+  position: absolute; top: -1px; right: 14px;
+  background: linear-gradient(135deg, var(--brand-2), #fb923c);
+  color: #fff; font-size: .65rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  padding: 3px 10px; border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 8px rgba(249,115,22,.4);
+}
+[dir='rtl'] .featured-badge { right: auto; left: 14px; }
 .featured-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .featured-tags span {
   padding: 4px 12px; border-radius: 999px; font-size: .75rem; font-weight: 600;
