@@ -19,7 +19,7 @@
 <header class="navbar" id="navbar">
   <div class="nav-inner">
     <a class="logo" href="#hero">
-      <span class="logo-mark">A</span>
+      <span class="logo-mark"></span>
       <span class="logo-text">
         <span class="logo-name" data-en="Adel Hamdan" data-ar="عادل حمدان">Adel Hamdan</span>
         <span class="logo-role" data-en="Factory Manager" data-ar="مدير المصنع">Factory Manager</span>
@@ -96,8 +96,104 @@
       <div class="avatar-wrap">
         <div class="avatar-ring outer-ring"></div>
         <div class="avatar-ring inner-ring"></div>
-        <div class="avatar-img">
-          <img src="IMG_6260.jpg.jpeg" alt="Adel Maher Hamdan" />
+        <div class="avatar-svg">
+          <svg viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="bg" cx="50%" cy="40%" r="55%">
+                <stop offset="0%" stop-color="#1E3A6E"/>
+                <stop offset="70%" stop-color="#0C1829"/>
+                <stop offset="100%" stop-color="#050D1A"/>
+              </radialGradient>
+              <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+                <feGaussianBlur stdDeviation="2.5" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+              <filter id="glowLg" x="-100%" y="-100%" width="300%" height="300%">
+                <feGaussianBlur stdDeviation="7" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+              <clipPath id="cc"><circle cx="130" cy="130" r="125"/></clipPath>
+              <path id="o1" d="M 210,130 A 80,30 0 1,0 50,130 A 80,30 0 1,0 210,130"/>
+              <path id="o2" d="M 170,199 A 80,30 60 1,0 90,61 A 80,30 60 1,0 170,199"/>
+              <path id="o3" d="M 90,199 A 80,30 120 1,0 170,61 A 80,30 120 1,0 90,199"/>
+            </defs>
+
+            <!-- Background -->
+            <circle cx="130" cy="130" r="130" fill="url(#bg)"/>
+
+            <!-- Grid -->
+            <g clip-path="url(#cc)" opacity="0.07" stroke="#4A90D9" stroke-width="0.6">
+              <line x1="0" y1="50" x2="260" y2="50"/><line x1="0" y1="80" x2="260" y2="80"/>
+              <line x1="0" y1="110" x2="260" y2="110"/><line x1="0" y1="140" x2="260" y2="140"/>
+              <line x1="0" y1="170" x2="260" y2="170"/><line x1="0" y1="200" x2="260" y2="200"/>
+              <line x1="50" y1="0" x2="50" y2="260"/><line x1="80" y1="0" x2="80" y2="260"/>
+              <line x1="110" y1="0" x2="110" y2="260"/><line x1="140" y1="0" x2="140" y2="260"/>
+              <line x1="170" y1="0" x2="170" y2="260"/><line x1="200" y1="0" x2="200" y2="260"/>
+            </g>
+
+            <!-- Bond lines center→nodes -->
+            <g stroke="#2A4F8F" stroke-width="1.4" stroke-dasharray="4 3" opacity="0.75">
+              <line x1="130" y1="130" x2="200" y2="130"/>
+              <line x1="130" y1="130" x2="165" y2="69"/>
+              <line x1="130" y1="130" x2="95" y2="69"/>
+              <line x1="130" y1="130" x2="60" y2="130"/>
+              <line x1="130" y1="130" x2="95" y2="191"/>
+              <line x1="130" y1="130" x2="165" y2="191"/>
+            </g>
+
+            <!-- Hexagonal ring bonds -->
+            <g stroke="#1E3A6E" stroke-width="1" opacity="0.45">
+              <line x1="200" y1="130" x2="165" y2="69"/>
+              <line x1="165" y1="69" x2="95" y2="69"/>
+              <line x1="95" y1="69" x2="60" y2="130"/>
+              <line x1="60" y1="130" x2="95" y2="191"/>
+              <line x1="95" y1="191" x2="165" y2="191"/>
+              <line x1="165" y1="191" x2="200" y2="130"/>
+            </g>
+
+            <!-- Orbital rings -->
+            <ellipse cx="130" cy="130" rx="80" ry="30" fill="none" stroke="#1B4B8A" stroke-width="1.4" stroke-dasharray="5 3" opacity="0.85"/>
+            <ellipse cx="130" cy="130" rx="80" ry="30" fill="none" stroke="#0EA5E9" stroke-width="1.4" stroke-dasharray="5 3" opacity="0.75" transform="rotate(60,130,130)"/>
+            <ellipse cx="130" cy="130" rx="80" ry="30" fill="none" stroke="#F97316" stroke-width="1.4" stroke-dasharray="5 3" opacity="0.65" transform="rotate(120,130,130)"/>
+
+            <!-- Molecular nodes -->
+            <g filter="url(#glow)">
+              <circle cx="200" cy="130" r="13" fill="#0F2550" stroke="#0EA5E9" stroke-width="1.8"><animate attributeName="r" values="12;14;12" dur="2.8s" begin="0s" repeatCount="indefinite"/></circle>
+              <text x="200" y="134" text-anchor="middle" fill="#93C5FD" font-size="9.5" font-weight="700" font-family="Inter,sans-serif">Fe</text>
+            </g>
+            <g filter="url(#glow)">
+              <circle cx="165" cy="69" r="13" fill="#0F2550" stroke="#F97316" stroke-width="1.8"><animate attributeName="r" values="12;14;12" dur="2.5s" begin="0.5s" repeatCount="indefinite"/></circle>
+              <text x="165" y="73" text-anchor="middle" fill="#FCA85F" font-size="9.5" font-weight="700" font-family="Inter,sans-serif">Cu</text>
+            </g>
+            <g filter="url(#glow)">
+              <circle cx="95" cy="69" r="13" fill="#0F2550" stroke="#0D9488" stroke-width="1.8"><animate attributeName="r" values="12;14;12" dur="3s" begin="1s" repeatCount="indefinite"/></circle>
+              <text x="95" y="73" text-anchor="middle" fill="#5EEAD4" font-size="9.5" font-weight="700" font-family="Inter,sans-serif">Mg</text>
+            </g>
+            <g filter="url(#glow)">
+              <circle cx="60" cy="130" r="13" fill="#0F2550" stroke="#7C3AED" stroke-width="1.8"><animate attributeName="r" values="12;14;12" dur="2.7s" begin="1.5s" repeatCount="indefinite"/></circle>
+              <text x="60" y="134" text-anchor="middle" fill="#C4B5FD" font-size="9.5" font-weight="700" font-family="Inter,sans-serif">Al</text>
+            </g>
+            <g filter="url(#glow)">
+              <circle cx="95" cy="191" r="13" fill="#0F2550" stroke="#0EA5E9" stroke-width="1.8"><animate attributeName="r" values="12;14;12" dur="2.4s" begin="2s" repeatCount="indefinite"/></circle>
+              <text x="95" y="195" text-anchor="middle" fill="#93C5FD" font-size="9.5" font-weight="700" font-family="Inter,sans-serif">Si</text>
+            </g>
+            <g filter="url(#glow)">
+              <circle cx="165" cy="191" r="13" fill="#0F2550" stroke="#F97316" stroke-width="1.8"><animate attributeName="r" values="12;14;12" dur="3.2s" begin="2.5s" repeatCount="indefinite"/></circle>
+              <text x="165" y="195" text-anchor="middle" fill="#FCA85F" font-size="9.5" font-weight="700" font-family="Inter,sans-serif">Ca</text>
+            </g>
+
+            <!-- Electrons -->
+            <circle r="4.5" fill="#60A5FA" filter="url(#glow)"><animateMotion dur="3.5s" repeatCount="indefinite" rotate="none"><mpath href="#o1"/></animateMotion></circle>
+            <circle r="4.5" fill="#38BDF8" filter="url(#glow)"><animateMotion dur="4.5s" repeatCount="indefinite" rotate="none"><mpath href="#o2"/></animateMotion></circle>
+            <circle r="4.5" fill="#FB923C" filter="url(#glow)"><animateMotion dur="5.5s" repeatCount="indefinite" rotate="none"><mpath href="#o3"/></animateMotion></circle>
+
+            <!-- Nucleus -->
+            <circle cx="130" cy="130" r="30" fill="#1B4B8A" opacity="0.25" filter="url(#glowLg)"><animate attributeName="r" values="28;35;28" dur="3s" repeatCount="indefinite"/></circle>
+            <circle cx="130" cy="130" r="21" fill="#1B3D78"/>
+            <circle cx="130" cy="130" r="15" fill="#2563EB"/>
+            <circle cx="130" cy="130" r="9" fill="#3B82F6"/>
+            <circle cx="130" cy="130" r="4" fill="white" opacity="0.95"/>
+          </svg>
         </div>
         <div class="avatar-badge badge-1"><i class="fa-solid fa-industry"></i><span data-en="Factory Mgr" data-ar="مدير مصنع">Factory Mgr</span></div>
         <div class="avatar-badge badge-2"><i class="fa-solid fa-flask"></i><span data-en="R&D Expert" data-ar="خبير بحث">R&D Expert</span></div>
@@ -172,10 +268,13 @@
             <span data-en="Supply Chain" data-ar="سلسلة التوريد">Supply Chain</span>
           </div>
           <ul class="timeline-bullets">
-            <li data-en="Directed end-to-end factory operations ensuring optimal productivity, efficiency, and product quality in cosmetics and pet care manufacturing." data-ar="أشرف على عمليات المصنع الشاملة لضمان الإنتاجية المثلى والكفاءة وجودة المنتج في تصنيع مستحضرات التجميل ورعاية الحيوانات.">Directed end-to-end factory operations ensuring optimal productivity, efficiency, and product quality in cosmetics and pet care manufacturing.</li>
-            <li data-en="Led the design, setup, and enhancement of PMO frameworks, governance models, and delivery methodologies across all programs." data-ar="قاد تصميم وإعداد وتحسين أُطر PMO ونماذج الحوكمة ومنهجيات التسليم عبر جميع البرامج.">Led the design, setup, and enhancement of PMO frameworks, governance models, and delivery methodologies across all programs.</li>
-            <li data-en="Established the manufacturing company from scratch to export-ready operations, managing all phases from facility setup to market launch." data-ar="أسس شركة التصنيع من الصفر حتى العمليات الجاهزة للتصدير، مع إدارة جميع المراحل من إعداد المنشأة حتى الإطلاق في السوق.">Established the manufacturing company from scratch to export-ready operations, managing all phases from facility setup to market launch.</li>
-            <li data-en="Led and mentored multidisciplinary teams of production supervisors, engineers, and operators; implemented KPIs and performance evaluations." data-ar="قاد وأرشد فرقاً متعددة التخصصات من مشرفي الإنتاج والمهندسين والمشغلين؛ ونفذ مؤشرات الأداء وتقييمات الأداء.">Led and mentored multidisciplinary teams of production supervisors, engineers, and operators; implemented KPIs and performance evaluations.</li>
+            <li data-en="Directed end-to-end factory operations ensuring optimal productivity, efficiency, and product quality in cosmetics and pet care manufacturing." data-ar="أشرف على عمليات المصنع الشاملة لضمان الإنتاجية المثلى والكفاءة وجودة المنتج.">Directed end-to-end factory operations ensuring optimal productivity, efficiency, and product quality in cosmetics and pet care manufacturing.</li>
+            <li data-en="Oversaw production schedules, resource allocation, and process flows to meet daily, monthly, and annual output targets while maintaining GMP and ISO compliance." data-ar="أشرف على جداول الإنتاج وتخصيص الموارد وتدفقات العمليات لتحقيق أهداف الإنتاج مع الحفاظ على امتثال GMP وISO.">Oversaw production schedules, resource allocation, and process flows to meet daily, monthly, and annual output targets while maintaining GMP and ISO compliance.</li>
+            <li data-en="Led the design, setup, and enhancement of PMO frameworks, governance models, and delivery methodologies; drove steering committees and executive forums." data-ar="قاد تصميم وإعداد وتحسين أُطر PMO ونماذج الحوكمة؛ وقاد لجان التوجيه والمنتديات التنفيذية.">Led the design, setup, and enhancement of PMO frameworks, governance models, and delivery methodologies; drove steering committees and executive forums.</li>
+            <li data-en="Ensured adherence to GMP, ISO, and FDA standards across all production and packaging lines in collaboration with QA/QC teams." data-ar="ضمن الالتزام بمعايير GMP وISO وFDA في جميع خطوط الإنتاج والتعبئة بالتعاون مع فرق ضمان الجودة.">Ensured adherence to GMP, ISO, and FDA standards across all production and packaging lines in collaboration with QA/QC teams.</li>
+            <li data-en="Coordinated with R&D, Procurement, Marketing, and Logistics to align production with business goals and new product launches." data-ar="نسّق مع فرق البحث والتطوير والمشتريات والتسويق واللوجستيات لمواءمة الإنتاج مع أهداف العمل وإطلاق المنتجات الجديدة.">Coordinated with R&D, Procurement, Marketing, and Logistics to align production with business goals and new product launches.</li>
+            <li data-en="Monitored raw materials and packaging supplies, streamlined procurement, and implemented cost optimization initiatives yielding significant savings." data-ar="راقب المواد الخام ومستلزمات التعبئة وبسّط المشتريات ونفّذ مبادرات تحسين التكاليف محققاً وفورات كبيرة.">Monitored raw materials and packaging supplies, streamlined procurement, and implemented cost optimization initiatives yielding significant savings.</li>
+            <li data-en="Led and mentored multidisciplinary teams; established KPIs, conducted performance evaluations, and guided junior PMO coordinators in delivery best practices." data-ar="قاد وأرشد فرقاً متعددة التخصصات؛ وأسس مؤشرات الأداء وأجرى تقييمات الأداء وأرشد منسقي PMO الجدد.">Led and mentored multidisciplinary teams; established KPIs, conducted performance evaluations, and guided junior PMO coordinators in delivery best practices.</li>
           </ul>
         </div>
       </div>
@@ -223,9 +322,11 @@
             <span data-en="KPI Monitoring" data-ar="مراقبة KPI">KPI Monitoring</span>
           </div>
           <ul class="timeline-bullets">
-            <li data-en="Designed, analyzed, and optimized manufacturing processes to maximize efficiency and minimize costs." data-ar="صمم وحلل وحسّن عمليات التصنيع لتعظيم الكفاءة وتقليل التكاليف.">Designed, analyzed, and optimized manufacturing processes to maximize efficiency and minimize costs.</li>
-            <li data-en="Conducted feasibility studies and technical assessments for new projects; developed engineering solutions to improve production capacity." data-ar="أجرى دراسات الجدوى والتقييمات التقنية للمشاريع الجديدة؛ وطور حلولاً هندسية لتحسين طاقة الإنتاج.">Conducted feasibility studies and technical assessments for new projects; developed engineering solutions to improve production capacity.</li>
-            <li data-en="Prepared detailed operational performance reports with actionable recommendations for senior management." data-ar="أعد تقارير تفصيلية عن الأداء التشغيلي مع توصيات قابلة للتنفيذ للإدارة العليا.">Prepared detailed operational performance reports with actionable recommendations for senior management.</li>
+            <li data-en="Designed, analyzed, and optimized manufacturing processes to maximize efficiency, increase production capacity, and minimize costs." data-ar="صمم وحلل وحسّن عمليات التصنيع لتعظيم الكفاءة وزيادة طاقة الإنتاج وتقليل التكاليف.">Designed, analyzed, and optimized manufacturing processes to maximize efficiency, increase production capacity, and minimize costs.</li>
+            <li data-en="Conducted feasibility studies and technical assessments for new projects; developed engineering solutions to resolve process issues and reduce waste." data-ar="أجرى دراسات الجدوى والتقييمات التقنية للمشاريع الجديدة؛ وطور حلولاً هندسية لحل مشكلات العمليات وتقليل الهدر.">Conducted feasibility studies and technical assessments for new projects; developed engineering solutions to resolve process issues and reduce waste.</li>
+            <li data-en="Monitored and analyzed operational data using advanced data analysis techniques to ensure processes met defined standards and production goals." data-ar="راقب وحلل البيانات التشغيلية باستخدام تقنيات تحليل البيانات المتقدمة لضمان استيفاء العمليات للمعايير وأهداف الإنتاج.">Monitored and analyzed operational data using advanced data analysis techniques to ensure processes met defined standards and production goals.</li>
+            <li data-en="Supported PMO framework execution; maintained integrated project plans, tracked deliverables, and facilitated cross-functional workshops and reviews." data-ar="دعم تنفيذ إطار PMO؛ وحافظ على خطط المشاريع المتكاملة وتتبع المخرجات وقاد ورش العمل متعددة الوظائف.">Supported PMO framework execution; maintained integrated project plans, tracked deliverables, and facilitated cross-functional workshops and reviews.</li>
+            <li data-en="Ensured implementation of quality systems and compliance with safety and occupational health regulations across all engineering programs." data-ar="ضمن تطبيق أنظمة الجودة والامتثال للوائح السلامة والصحة المهنية في جميع البرامج الهندسية.">Ensured implementation of quality systems and compliance with safety and occupational health regulations across all engineering programs.</li>
           </ul>
         </div>
       </div>
@@ -248,8 +349,10 @@
             <span data-en="Root Cause Analysis" data-ar="تحليل الأسباب الجذرية">Root Cause Analysis</span>
           </div>
           <ul class="timeline-bullets">
-            <li data-en="Developed and implemented ISO 9001 quality management systems for plastic products." data-ar="طور ونفذ أنظمة إدارة الجودة ISO 9001 للمنتجات البلاستيكية.">Developed and implemented ISO 9001 quality management systems for plastic products.</li>
-            <li data-en="Applied Six Sigma and Lean Manufacturing to improve processes and reduce defects." data-ar="طبق ستة سيغما والتصنيع الرشيق لتحسين العمليات وتقليل العيوب.">Applied Six Sigma and Lean Manufacturing to improve processes and reduce defects.</li>
+            <li data-en="Developed and implemented ISO 9001 quality management systems ensuring plastic products comply with international and local standards." data-ar="طور ونفذ أنظمة إدارة الجودة ISO 9001 لضمان امتثال المنتجات البلاستيكية للمعايير الدولية والمحلية.">Developed and implemented ISO 9001 quality management systems ensuring plastic products comply with international and local standards.</li>
+            <li data-en="Conducted thorough testing and inspections on raw materials and final products to ensure quality and safety meet specifications." data-ar="أجرى اختبارات وفحوصات شاملة على المواد الخام والمنتجات النهائية لضمان استيفاء الجودة والسلامة للمواصفات.">Conducted thorough testing and inspections on raw materials and final products to ensure quality and safety meet specifications.</li>
+            <li data-en="Applied Six Sigma and Lean Manufacturing techniques to improve production processes, reduce defects, and develop regular technical reports on quality performance." data-ar="طبق تقنيات ستة سيغما والتصنيع الرشيق لتحسين عمليات الإنتاج وتقليل العيوب وإعداد تقارير تقنية منتظمة عن الأداء.">Applied Six Sigma and Lean Manufacturing techniques to improve production processes, reduce defects, and develop regular technical reports on quality performance.</li>
+            <li data-en="Trained teams on best practices in quality assurance and root cause analysis; managed customer complaints and provided corrective solutions." data-ar="درّب الفرق على أفضل الممارسات في ضمان الجودة وتحليل الأسباب الجذرية؛ وأدار شكاوى العملاء وقدم حلولاً تصحيحية.">Trained teams on best practices in quality assurance and root cause analysis; managed customer complaints and provided corrective solutions.</li>
           </ul>
         </div>
       </div>
@@ -338,6 +441,11 @@
         <div class="project-card reveal"><i class="fa-solid fa-building-columns"></i><h4 data-en="Phosphate-Based Cement" data-ar="إسمنت قائم على الفوسفات">Phosphate-Based Cement</h4><p data-en="Novel cement formulation using phosphate as primary binding agent." data-ar="تركيبة إسمنت جديدة تستخدم الفوسفات كعامل رابط أساسي.">Novel cement formulation using phosphate as primary binding agent.</p></div>
         <div class="project-card reveal"><i class="fa-solid fa-burst"></i><h4 data-en="Sand Blasting Development Process" data-ar="عملية تطوير السفع الرملي">Sand Blasting Development Process</h4><p data-en="Optimized sand blasting process for industrial surface preparation." data-ar="تحسين عملية السفع الرملي للإعداد السطحي الصناعي.">Optimized sand blasting process for industrial surface preparation.</p></div>
         <div class="project-card reveal"><i class="fa-solid fa-volcano"></i><h4 data-en="Pozzolana Beneficiation Process" data-ar="عملية تحسين البوزولانا">Pozzolana Beneficiation Process</h4><p data-en="Volcanic ash treatment for use in sustainable construction materials." data-ar="معالجة الرماد البركاني للاستخدام في مواد البناء المستدامة.">Volcanic ash treatment for use in sustainable construction materials.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-spray-can"></i><h4 data-en="Thermoplastic Powder Coating" data-ar="طلاء المسحوق الحراري">Thermoplastic Powder Coating</h4><p data-en="Development and optimization of thermoplastic powder coating formulations for industrial surfaces." data-ar="تطوير وتحسين تركيبات طلاء المسحوق الحراري للأسطح الصناعية.">Development and optimization of thermoplastic powder coating formulations for industrial surfaces.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-star"></i><h4 data-en="Ground Calcium Carbonate Brightness Improvement" data-ar="تحسين بياض كربونات الكالسيوم المطحونة">Ground Calcium Carbonate Brightness Improvement</h4><p data-en="Process research to enhance the brightness and whiteness index of GCC for premium industrial applications." data-ar="بحث في العمليات لتحسين مؤشر السطوع والبياض لـ GCC للتطبيقات الصناعية المتميزة.">Process research to enhance the brightness and whiteness index of GCC for premium industrial applications.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-rotate"></i><h4 data-en="Continuous Cyclic Magnesia Process" data-ar="عملية مغنيسيا دورية مستمرة">Continuous Cyclic Magnesia Process</h4><p data-en="Developed a novel continuous cyclic process for high-efficiency magnesia preparation." data-ar="طور عملية دورية مستمرة جديدة لتحضير المغنيسيا عالية الكفاءة.">Developed a novel continuous cyclic process for high-efficiency magnesia preparation.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-pipe-section"></i><h4 data-en="PVC Pipe Formulation Development" data-ar="تطوير تركيبة أنابيب PVC">PVC Pipe Formulation Development</h4><p data-en="Optimized PVC pipe compound formulations for improved mechanical and thermal performance." data-ar="تحسين تركيبات مركبات أنابيب PVC لتحسين الأداء الميكانيكي والحراري.">Optimized PVC pipe compound formulations for improved mechanical and thermal performance.</p></div>
+        <div class="project-card reveal"><i class="fa-solid fa-water"></i><h4 data-en="Silica Sand Washing Process" data-ar="عملية غسيل الرمل السيليسي">Silica Sand Washing Process</h4><p data-en="Designed and optimized a washing process for silica sand purification to meet industrial-grade specifications." data-ar="صمم وحسّن عملية غسيل لتنقية الرمل السيليسي لتلبية المواصفات الصناعية.">Designed and optimized a washing process for silica sand purification to meet industrial-grade specifications.</p></div>
       </div>
     </div>
 
